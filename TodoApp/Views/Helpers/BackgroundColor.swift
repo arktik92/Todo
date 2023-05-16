@@ -7,14 +7,12 @@
 
 import SwiftUI
 
+import SwiftUI
+
 struct BackgroundColor: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        LinearGradient(colors: [Color("Todo blue"), Color("BgColor")], startPoint: .topLeading, endPoint: .bottomTrailing)
+            .ignoresSafeArea()
     }
 }
 
-struct BackgroundColor_Previews: PreviewProvider {
-    static var previews: some View {
-        BackgroundColor()
-    }
-}

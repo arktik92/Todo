@@ -16,6 +16,21 @@
 		F289D69C29FCADCE00022381 /* TodoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289D69B29FCADCE00022381 /* TodoAppTests.swift */; };
 		F289D6A629FCADCE00022381 /* TodoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289D6A529FCADCE00022381 /* TodoAppUITests.swift */; };
 		F289D6A829FCADCE00022381 /* TodoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289D6A729FCADCE00022381 /* TodoAppUITestsLaunchTests.swift */; };
+		F289D6B629FCAE7D00022381 /* DateAndTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289D6B529FCAE7D00022381 /* DateAndTimeFormatter.swift */; };
+		F289D6B829FCAE9E00022381 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289D6B729FCAE9E00022381 /* NotificationManager.swift */; };
+		F289D6BB29FCAECE00022381 /* CategoryPickerSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289D6BA29FCAECE00022381 /* CategoryPickerSelection.swift */; };
+		F289D6BD29FCAEF200022381 /* TypePickerSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289D6BC29FCAEF200022381 /* TypePickerSelection.swift */; };
+		F289D6C029FCAF3300022381 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289D6BF29FCAF3300022381 /* TodoViewModel.swift */; };
+		F289D6C429FCAF7600022381 /* SegmentedPickerCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289D6C329FCAF7600022381 /* SegmentedPickerCategory.swift */; };
+		F289D6C629FCAF9B00022381 /* SegmentedPickerTodoOrDone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289D6C529FCAF9B00022381 /* SegmentedPickerTodoOrDone.swift */; };
+		F289D6C829FCAFD000022381 /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289D6C729FCAFD000022381 /* BackgroundColor.swift */; };
+		F289D6CA29FCAFED00022381 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289D6C929FCAFED00022381 /* CardView.swift */; };
+		F289D6CC29FCB00D00022381 /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289D6CB29FCB00D00022381 /* AddTodoView.swift */; };
+		F289D6CE29FCB03E00022381 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289D6CD29FCB03E00022381 /* SplashScreen.swift */; };
+		F289D6D129FCB06800022381 /* ListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289D6D029FCB06800022381 /* ListCellView.swift */; };
+		F289D6D329FCB08900022381 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289D6D229FCB08900022381 /* TaskListView.swift */; };
+		F289D6D529FCB0A400022381 /* TodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289D6D429FCB0A400022381 /* TodoDetailView.swift */; };
+		F289D6D929FCB18100022381 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = F289D6D829FCB18100022381 /* Introspect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +63,20 @@
 		F289D6A129FCADCE00022381 /* TodoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F289D6A529FCADCE00022381 /* TodoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITests.swift; sourceTree = "<group>"; };
 		F289D6A729FCADCE00022381 /* TodoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F289D6B529FCAE7D00022381 /* DateAndTimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndTimeFormatter.swift; sourceTree = "<group>"; };
+		F289D6B729FCAE9E00022381 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		F289D6BA29FCAECE00022381 /* CategoryPickerSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerSelection.swift; sourceTree = "<group>"; };
+		F289D6BC29FCAEF200022381 /* TypePickerSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypePickerSelection.swift; sourceTree = "<group>"; };
+		F289D6BF29FCAF3300022381 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		F289D6C329FCAF7600022381 /* SegmentedPickerCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPickerCategory.swift; sourceTree = "<group>"; };
+		F289D6C529FCAF9B00022381 /* SegmentedPickerTodoOrDone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPickerTodoOrDone.swift; sourceTree = "<group>"; };
+		F289D6C729FCAFD000022381 /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
+		F289D6C929FCAFED00022381 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F289D6CB29FCB00D00022381 /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
+		F289D6CD29FCB03E00022381 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		F289D6D029FCB06800022381 /* ListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellView.swift; sourceTree = "<group>"; };
+		F289D6D229FCB08900022381 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		F289D6D429FCB0A400022381 /* TodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F289D6D929FCB18100022381 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +112,7 @@
 				F289D69A29FCADCE00022381 /* TodoAppTests */,
 				F289D6A429FCADCE00022381 /* TodoAppUITests */,
 				F289D68329FCADCC00022381 /* Products */,
+				F289D6D729FCB18100022381 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,9 +131,12 @@
 			children = (
 				F289D68529FCADCC00022381 /* TodoAppApp.swift */,
 				F289D68729FCADCC00022381 /* ContentView.swift */,
+				F289D6C129FCAF4600022381 /* Views */,
+				F289D6BE29FCAF1D00022381 /* ViewModels */,
+				F289D6B929FCAEB600022381 /* Models */,
+				F289D6B429FCAE6800022381 /* Utils */,
 				F289D68929FCADCE00022381 /* Assets.xcassets */,
 				F289D68E29FCADCE00022381 /* Persistence.swift */,
-				F289D69029FCADCE00022381 /* TodoApp.xcdatamodeld */,
 				F289D68B29FCADCE00022381 /* Preview Content */,
 			);
 			path = TodoApp;
@@ -133,6 +167,72 @@
 			path = TodoAppUITests;
 			sourceTree = "<group>";
 		};
+		F289D6B429FCAE6800022381 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F289D6B529FCAE7D00022381 /* DateAndTimeFormatter.swift */,
+				F289D6B729FCAE9E00022381 /* NotificationManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F289D6B929FCAEB600022381 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F289D6BA29FCAECE00022381 /* CategoryPickerSelection.swift */,
+				F289D6BC29FCAEF200022381 /* TypePickerSelection.swift */,
+				F289D69029FCADCE00022381 /* TodoApp.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F289D6BE29FCAF1D00022381 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F289D6BF29FCAF3300022381 /* TodoViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F289D6C129FCAF4600022381 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F289D6CF29FCB05100022381 /* ListFlow */,
+				F289D6CD29FCB03E00022381 /* SplashScreen.swift */,
+				F289D6C929FCAFED00022381 /* CardView.swift */,
+				F289D6CB29FCB00D00022381 /* AddTodoView.swift */,
+				F289D6C229FCAF5700022381 /* Helpers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F289D6C229FCAF5700022381 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F289D6C329FCAF7600022381 /* SegmentedPickerCategory.swift */,
+				F289D6C729FCAFD000022381 /* BackgroundColor.swift */,
+				F289D6C529FCAF9B00022381 /* SegmentedPickerTodoOrDone.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F289D6CF29FCB05100022381 /* ListFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F289D6D029FCB06800022381 /* ListCellView.swift */,
+				F289D6D229FCB08900022381 /* TaskListView.swift */,
+				F289D6D429FCB0A400022381 /* TodoDetailView.swift */,
+			);
+			path = ListFlow;
+			sourceTree = "<group>";
+		};
+		F289D6D729FCB18100022381 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +249,9 @@
 			dependencies = (
 			);
 			name = TodoApp;
+			packageProductDependencies = (
+				F289D6D829FCB18100022381 /* Introspect */,
+			);
 			productName = TodoApp;
 			productReference = F289D68229FCADCC00022381 /* TodoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +324,9 @@
 				Base,
 			);
 			mainGroup = F289D67929FCADCC00022381;
+			packageReferences = (
+				F289D6D629FCB0D800022381 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
 			productRefGroup = F289D68329FCADCC00022381 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,7 +369,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F289D6CE29FCB03E00022381 /* SplashScreen.swift in Sources */,
+				F289D6D529FCB0A400022381 /* TodoDetailView.swift in Sources */,
+				F289D6C029FCAF3300022381 /* TodoViewModel.swift in Sources */,
+				F289D6C629FCAF9B00022381 /* SegmentedPickerTodoOrDone.swift in Sources */,
+				F289D6CC29FCB00D00022381 /* AddTodoView.swift in Sources */,
+				F289D6D129FCB06800022381 /* ListCellView.swift in Sources */,
+				F289D6B829FCAE9E00022381 /* NotificationManager.swift in Sources */,
+				F289D6BB29FCAECE00022381 /* CategoryPickerSelection.swift in Sources */,
+				F289D6BD29FCAEF200022381 /* TypePickerSelection.swift in Sources */,
+				F289D6B629FCAE7D00022381 /* DateAndTimeFormatter.swift in Sources */,
 				F289D68F29FCADCE00022381 /* Persistence.swift in Sources */,
+				F289D6CA29FCAFED00022381 /* CardView.swift in Sources */,
+				F289D6C829FCAFD000022381 /* BackgroundColor.swift in Sources */,
+				F289D6D329FCB08900022381 /* TaskListView.swift in Sources */,
+				F289D6C429FCAF7600022381 /* SegmentedPickerCategory.swift in Sources */,
 				F289D68829FCADCC00022381 /* ContentView.swift in Sources */,
 				F289D68629FCADCC00022381 /* TodoAppApp.swift in Sources */,
 				F289D69229FCADCE00022381 /* TodoApp.xcdatamodeld in Sources */,
@@ -591,6 +711,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F289D6D629FCB0D800022381 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F289D6D829FCB18100022381 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F289D6D629FCB0D800022381 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F289D69029FCADCE00022381 /* TodoApp.xcdatamodeld */ = {

@@ -6,31 +6,48 @@
 //
 
 import XCTest
+import SwiftUI
+import CoreData
 @testable import TodoApp
+
 
 final class TodoAppTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    // Variables Tests
+    let viewContext = PersistenceController(inMemory: true).container.viewContext
+    @ObservedObject var vm = TodoViewModel()
+    
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testAddFunction() {
+        
+        let title = "UnitTestAddFunctionTitle"
+        let plot = "UnitTestAddFunctionDescription"
+        let expire = Date.now
+        let dateToggleSwitch = false
+        let categoryPickerSelection: CategoryPickerSelection = .maison
+        
+        let item = vm.addItem(title: title, plot: plot, expire: expire, categogyPickerSelection: categoryPickerSelection, dateToggleSwitch: dateToggleSwitch, vc: viewContext)
+
+        
+        print(item)
+        XCTAssertEqual(item.title, title)
+        XCTAssertEqual(item.plot, plot)
+        if item.dateToggleSwitch {
+            XCTAssertEqual(item.expire, expire)
         }
+        XCTAssertEqual(item.dateToggleSwitch, dateToggleSwitch)
     }
-
+    func testSaveItem() {
+        // Add Item
+        Task {
+            vm.todos = await vm.loadData(vc: viewContext)
+            let item2 = vm.addItem(title: "titleBeforeUpdate", plot: "plotBeforeUpdate", expire: Date.now, categogyPickerSelection: .maison, dateToggleSwitch: false, vc: viewContext)
+            vm.saveItem(item: item2, title: "title" , plot: "Description" , categogyPickerSelection: .travail, expire: Date.now , vc: viewContext)
+            let todos = await vm.loadData(vc: viewContext)
+            print(todos.count)
+        }
+        
+            }
 }

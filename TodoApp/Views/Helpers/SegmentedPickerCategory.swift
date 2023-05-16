@@ -6,15 +6,31 @@
 //
 
 import SwiftUI
+import Introspect
 
 struct SegmentedPickerCategory: View {
+    @Binding var CategorypickerSelection: CategoryPickerSelection
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Picker("", selection: $CategorypickerSelection) {
+            ForEach(CategoryPickerSelection.allCases, id: \.self) { value in
+                Text(value.rawValue.capitalized)
+            }
+        }
+        .introspectSegmentedControl { segmentedControl in
+            segmentedControl.backgroundColor = UIColor(red: 1, green: 0.749, blue: 0, alpha: 0.5)
+            segmentedControl.selectedSegmentTintColor = UIColor(red: 1, green: 0.992, blue: 0.082, alpha: 1)
+            segmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor(.black)], for: .selected)
+            segmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor(red: 1, green: 0.749, blue: 0, alpha: 1)], for: .normal)
+        }
+        .pickerStyle(.segmented)
+        .padding(.horizontal)
     }
 }
 
 struct SegmentedPickerCategory_Previews: PreviewProvider {
     static var previews: some View {
-        SegmentedPickerCategory()
+        SegmentedPickerCategory(CategorypickerSelection: .constant(.travail))
     }
 }
+
